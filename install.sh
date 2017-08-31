@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-# Symlink Dotfiles
-ln -svnf ~/.dotfiles/.bash_profile ~
-ln -svnf ~/.dotfiles/.vimrc ~
-ln -svnf ~/.dotfiles/.vim ~
-ln -svnf ~/.dotfiles/.gitconfig ~
-ln -svnf ~/.dotfiles/.gitignore_global ~
+# Copy Dotfiles
+cp  ~/.dotfiles/.bash_profile ~
+cp ~/.dotfiles/.gitconfig ~
+cp ~/.dotfiles/.gitignore_global ~
+cp  ~/.dotfiles/.vimrc ~
+cp -R ~/.dotfiles/.vim ~
+cp ~/.dotfiles/.gitconfig ~
 
