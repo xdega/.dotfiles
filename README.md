@@ -28,6 +28,8 @@ Feel free to use these settings as a starting point (or in leiu of) for your own
 - Run `vim` and then the command `:PluginInstall`
 
 ### Git
+- Install Git PS1 via `curl -o ~/.git-prompt.sh \
+    https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh`
 - From your `.dotfiles` directory, open `.gitconfig` and edit the following section to match your Git user:
 ```
 [user]
