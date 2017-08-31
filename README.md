@@ -17,7 +17,7 @@ Feel free to use these settings as a starting point (or in leiu of) for your own
 
 <img width="1170" alt="Vim Editor View" src="https://user-images.githubusercontent.com/8093386/29902846-43d6aef4-8dc6-11e7-9fd3-7d55055ce392.png">
 
-### Installation
+## Installation
 
 - Clone the repository in your home directory like so: `git clone https://github.com/xdega/.dotfiles.git`
 - From your `.dotfiles` directory run `./install.sh`
