@@ -27,6 +27,7 @@ alias lla="ls -lhA"
 alias claer="clear"
 
 # Set LS Colors
+export CLICOLOR=1
 LS_COLORS=$LS_COLORS:'di=1;94:fi=0;0'
 export LS_COLORS
 
