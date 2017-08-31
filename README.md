@@ -20,8 +20,14 @@ Feel free to use these settings as a starting point (or in leiu of) for your own
 ## Installation
 
 - Clone the repository in your home directory like so: `git clone https://github.com/xdega/.dotfiles.git`
-- From your `.dotfiles` directory, run `./install.sh`
-- Run `vim` and then the command `:PluginInstall` from inside Vim (pulls in Vim plugins via [Vundle](https://github.com/VundleVim/Vundle.vim))
+- From your `.dotfiles` directory, run `./install.sh` (to Copy files to home directory)
+
+### Vim
+- Install Vundle via `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+- Run `vim` and then the command `:so ~/.vimrc`
+- Run `vim` and then the command `:PluginInstall`
+
+### Git
 - From your `.dotfiles` directory, open `.gitconfig` and edit the following section to match your Git user:
 ```
 [user]
