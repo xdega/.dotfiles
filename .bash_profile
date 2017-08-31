@@ -5,6 +5,7 @@
 # Bash Core Setup Options
 export GREP_OPTIONS='--color=always'
 export EDITOR=vim
+source ~/.git-prompt.sh
 
 # Source Bashrc
 if [ -f $HOME/.bashrc ]; then
