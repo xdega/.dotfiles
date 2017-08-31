@@ -1,0 +1,32 @@
+[user]
+    email = xdega121@gmail.com
+    name = Liam Hockley
+
+[core]
+    repositoryformatversion = 0
+    bare = false
+    logallrefupdates = true
+    editor = vim
+    excludesfile = ~/.gitignore_global
+
+[color]
+    diff = auto
+
+[color "diff"]
+    meta = yellow bold
+    frag = green bold
+    old = red
+    new = cyan
+
+[branch]
+    autosetupmerge = always
+
+[push]
+    default = current
+
+[grep]
+    patternType = perl
+
+[alias]
+    sync = !git checkout master && git fetch -p && git merge --ff-only origin/master
+
