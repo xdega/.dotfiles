@@ -24,11 +24,11 @@ Feel free to use these settings as a starting point (or in leiu of) for your own
 - Run `vim` and then the command `:PluginInstall` from inside Vim (pulls in Vim plugins via [Vundle](https://github.com/VundleVim/Vundle.vim))
 - Thats It! (You will want to reload your bash session to see changes)
 
-### Extending Configuration
+## Extending Configuration
 
-## Aliases
+### Aliases
 
 To define custom aliases that will be loaded by the `.bash_profile`, you can create a `~/.bash_aliases` file.
 
-## Bash Profile
+### Bash Profile
 To define custom extention settings to the `.bash_profile` (not included in `.bashrc`), you can create a `~/.bash_ext` file.
