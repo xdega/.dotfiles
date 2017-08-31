@@ -3,9 +3,20 @@
 " Description: Aesthetically pleasing and minimal, yet functional.
 
 " --- Editor Setup and Color Scheme --- "
-" Load Plugins
-set nocompatible
-so ~/.vim/plugins.vim
+" Begin Vundle
+set nocompatible       
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Define Plugins
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+" End Vundle
+call vundle#end()
+filetype plugin indent on
 
 " GUI and Colors
 set showmode
