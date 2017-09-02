@@ -33,6 +33,11 @@ set expandtab
 set autoindent
 set smartindent
 set nowrap
+
+" YAML Indentation
+au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType yml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
 " Custom Highlights
 hi TabLineSel ctermbg=88
 au InsertEnter * hi TabLineSel ctermbg=29
