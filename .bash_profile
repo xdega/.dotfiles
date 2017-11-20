@@ -22,6 +22,11 @@ if [ -f $HOME/.bash_ext ]; then
     . $HOME/.bash_ext
 fi
 
+# Source Git Completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 # Set Basic Aliases
 alias lla="ls -lhA"
 alias claer="clear"

@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Volumes/Development Drive/Web Development/timetrack/app/assets'
+let g:netrw_dirhist_2='/Volumes/Development Drive/Web Development/timetrack/app/assets/javascripts'
+let g:netrw_dirhist_3='/Volumes/Development Drive/Web Development/timetrack/app/assets/stylesheets'
+let g:netrw_dirhist_4='/Volumes/Development Drive/Web Development/minutia'
+let g:netrw_dirhist_5='/Volumes/Development Drive/Web Development/sycamoreschool'
+let g:netrw_dirhist_6='/Volumes/Development Drive/Web Development/sycamoreschool/CreditCardTypeDetector'
+let g:netrw_dirhist_7='/Volumes/Development Drive/Web Development/sycamoreschool/classes/Helper'
