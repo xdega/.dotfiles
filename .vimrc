@@ -11,9 +11,10 @@ call vundle#begin()
 " Define Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+Plugin 'w0rp/ale'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tomasiser/vim-code-dark'
+Plugin 'pangloss/vim-javascript'
 " End Vundle
 call vundle#end()
 filetype plugin indent on
