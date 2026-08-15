@@ -115,6 +115,29 @@ git commit -m "Add gruvbox colorscheme"
 git push
 ```
 
+### Adopting a file a tool wrote directly to `~`
+
+Some tools don't respect your symlinks — they write straight to `~/.some-config` instead of editing through it (or the file didn't exist yet, so there was nothing to write "through"). `scripts/adopt.sh` pulls a file like that into the repo automatically, using Stow's built-in `--adopt` mode, and leaves a symlink behind in its place:
+
+```bash
+cd ~/Development/dotfiles
+./scripts/adopt.sh warp .warp/themes/my-custom-theme.toml   # <package> <path-relative-to-home>
+git diff -- warp                       # review what got pulled in
+git add warp/.warp/themes/my-custom-theme.toml
+git commit -m "Track my custom Warp theme"
+git push
+```
+
+You can adopt more than one path at once (`./scripts/adopt.sh warp .warp/themes/a.toml .warp/themes/b.toml`), and if you name a package that doesn't exist yet, it's created for you — so this also works the first time a brand new tool writes a config file you want to start tracking:
+
+```bash
+./scripts/adopt.sh newtool .config/newtool/config.toml
+```
+
+It skips (safely, without touching anything) if the path is already a symlink, doesn't exist, or the repo already tracks something at that location — in that last case, compare the two by hand and decide which version should win.
+
+There's no way to make this happen fully automatically the moment a tool writes the file — nothing here watches your filesystem for changes — but running `adopt.sh` is a one-line fix whenever you notice it's happened.
+
 ### Adding a whole new package
 
 ```bash
