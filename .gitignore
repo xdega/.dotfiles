@@ -1,0 +1,5 @@
+# Backups created by scripts/stow_link.sh when it moves pre-existing
+# real dotfiles out of the way before stowing.
+.backup/
+
+.DS_Store
